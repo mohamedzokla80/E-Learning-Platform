@@ -1,9 +1,12 @@
 {
+  "homepage": "https://mohamedzokla80.github.io/E-Learning-Platform",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -12,12 +15,14 @@
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.13.2",
     "framer-motion": "^12.6.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icon": "^1.0.0",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
